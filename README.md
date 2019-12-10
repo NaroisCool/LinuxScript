@@ -4,7 +4,7 @@
 ##Tutorial
 ```
 mkdir ~/bin
-curl -o ~/bin/dct.sh https://gitlab.com/benoit.lavorata/dct/raw/master/dct.sh
+curl -o ~/bin/dct.sh https://raw.githubusercontent.com/NaroisCool/LinuxScript/master/dct.sh
 chmod +x ~/bin/dct.sh 
 ```
 
