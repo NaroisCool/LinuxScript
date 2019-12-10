@@ -1,5 +1,4 @@
 # This a script from Benoit which is my buddy. https://github.com/benoitlavorata
-## This is use for docker to install apps
 
 ## Tutorial for fresh server installation 
 
@@ -10,6 +9,7 @@ apt-get upgrade -y
 sudo apt-get install tmux vim wget curl jq git build-essential -y
 ```
 ### add firewall
+```
 apt-get install ufw -y
 ufw default allow outgoing
 ufw default deny incoming
@@ -19,6 +19,7 @@ ufw allow 443/tcp
 ufw enable
 ufw reload
 ufw status
+```
 ### dct
 ```
 mkdir ~/bin
@@ -39,7 +40,7 @@ ZSH
 I usually add the theme af-magic + auto tmux
 
 Edit the conf file
-``
+```
 cd ~
 nano .zshrc
 ```
@@ -63,18 +64,21 @@ Reload:
 source .zshrc
 ```
 ### Tmux
+```
 cd ~/
 touch ~/.tmux.conf
 echo "" >> ~/.tmux.conf
 echo "set -g status-fg white" >> ~/.tmux.conf
 echo "" >> ~/.tmux.conf
 echo "set -g status-bg red" >> ~/.tmux.conf
+```
 ### Install docker + docker-compose
+```
 curl -sSL https://get.docker.com/ | sh
 sudo usermod -aG docker falinwa
 sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
-
+```
 ### Set up apps with dct / git
 Make default dirs
 ```
