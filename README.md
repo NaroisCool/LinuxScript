@@ -1,4 +1,4 @@
-# This a script from Benoit which is my buddy. https://github.com/benoitlavorata
+# This a script from Benoit . https://github.com/benoitlavorata
 
 ## Tutorial for fresh server installation 
 
